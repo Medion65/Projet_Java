@@ -3,15 +3,18 @@ package fr.dessin;
 public class Point2D {
     private Integer x;
     private Integer y;
+    private static Integer compteur = 0;
 
     public Point2D() {
-        this.x = 0;
-        this.y = 0;
+        this.setX(0);
+        this.setY(0);
+        Point2D.compteur++;
     }
 
     public Point2D(Integer vX, Integer vY) {
-        this.x = vX;
-        this.y = vY;
+        this.setX(vX);
+        this.setY(vY);
+        Point2D.compteur++;
     }
 
     public Integer getX() {
@@ -38,7 +41,10 @@ public class Point2D {
                 .concat(this.getY().toString())
                 .concat("]")
         );
+    }
 
+    public static Integer getCompteur(){
+        return Point2D.compteur;
     }
 
     /**

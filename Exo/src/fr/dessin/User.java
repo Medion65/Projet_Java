@@ -1,6 +1,6 @@
-package fr.dessin.exo.Point2D;
+package fr.dessin;
 
-import fr.dessin.exo.Point2D.controllers.UsersControllers;
+import fr.dessin.controllers.UsersControllers;
 
 public class User {
     public User() {

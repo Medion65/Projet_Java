@@ -1,4 +1,4 @@
-package fr.dessin.exo.Point2D.controllers;
+package fr.dessin.controllers;
 
 public class UsersControllers {
 
